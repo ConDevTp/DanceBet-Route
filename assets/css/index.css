@@ -531,11 +531,13 @@ body {
 }
 
 /* ------------------------------------------- */
+.socialicons {
+  gap: 15px !important;
+}
 
 .socialicons a {
   width: 45px !important;
   height: 45px !important;
-  margin: 0 7px !important;
   transition: transform 0.2s ease !important;
   background-color: #0061bb !important;
   display: flex !important;
@@ -556,7 +558,6 @@ body {
   .socialicons a {
     width: 38px !important;
     height: 38px !important;
-    margin: 0 5px !important;
   }
 }
 
