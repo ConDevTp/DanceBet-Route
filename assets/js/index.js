@@ -9,11 +9,11 @@ function toggleAccordion(contentId, iconId, headerClass) {
   if (content.classList.contains("boxitemshow")) {
     content.classList.remove("boxitemshow");
     content.classList.add("boxitemshowclose");
-    icon.src = "./assets/img/add.png";
+    icon.src = "./assets/img/add.webp";
   } else {
     content.classList.add("boxitemshow");
     content.classList.remove("boxitemshowclose");
-    icon.src = "./assets/img/minus-square.png";
+    icon.src = "./assets/img/minus-square.webp";
   }
 
   header.classList.toggle("borderbotm");
