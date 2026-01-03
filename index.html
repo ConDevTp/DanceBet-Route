@@ -59,11 +59,28 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": "WebSite",
+            "@id": "https://m.dancebet.com/fa/#website",
+            "url": "https://m.dancebet.com/fa/",
+            "name": "دنس بت",
+            "alternateName": "Dance Bet",
+            "inLanguage": "fa-IR",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://m.dancebet.com/fa/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
             "@type": "Organization",
+            "@id": "https://m.dancebet.com/fa/#organization",
             "name": "دنس بت",
             "alternateName": "Dance Bet",
             "url": "https://m.dancebet.com/fa/",
-            "logo": "https://m.dancebet.com/fa/assets/images/og-image.webp",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://m.dancebet.com/fa/assets/images/og-image.webp"
+            },
             "sameAs": [
               "https://t.me/dancebet_site",
               "https://x.com/dancebet_bet",
@@ -72,36 +89,43 @@
           },
           {
             "@type": "BreadcrumbList",
+            "@id": "https://m.dancebet.com/fa/#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "صفحه اصلی",
                 "item": "https://m.dancebet.com/fa/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "بازی انفجار",
+                "item": "https://m.dancebet.com/fa/casino/slots/406/crashgames"
               }
             ]
           },
           {
-            "@type": "Product",
-            "name": "سایت شرط بندی دنس بت",
-            "brand": {
-              "@type": "Brand",
-              "name": "Dance Bet"
-            },
-            "description": "سایت شرط بندی و کازینو آنلاین دنس بت با بونوس خوش‌آمدگویی، پیش‌بینی ورزشی، انفجار و کازینو زنده",
-            "offers": {
-              "@type": "Offer",
-              "url": "https://m.dancebet.com/fa/",
-              "price": "0",
-              "priceCurrency": "IRR",
-              "priceValidUntil": "2026-12-31",
-              "availability": "https://schema.org/InStock"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "reviewCount": "12437"
-            }
+            "@type": "FAQPage",
+            "@id": "https://m.dancebet.com/fa/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "چطور در دنس بت ثبت‌نام کنم؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ثبت‌نام در دنس بت سریع، رایگان و در چند دقیقه انجام می‌شود."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "برداشت وجه در دنس بت چقدر زمان می‌برد؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "درخواست‌های برداشت به‌صورت ۲۴ ساعته پردازش و در کوتاه‌ترین زمان انجام می‌شوند."
+                }
+              }
+            ]
           }
         ]
       }
